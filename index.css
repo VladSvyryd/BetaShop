@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Spirax|Slabo+27px');
+
+*, * ::before, * ::after {
+  box-sizing: border-box; 
+	margin: 0;}
+
+html{
+    height: 100%;
+	width: 100%;
+
+}
+body{
+    width: 100%;
+	height: 100%;
+    margin: 0;
+	font-size: 16px;
+}
+header{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	background-image: url(photographer-234907.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+nav{
+	width: 100%;
+	height: 140px;
+}
+nav .navcont{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	height: 77px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 63px;
+}
+
+
+.logo {
+	display: inline-block;
+	width: 200px;
+	height: 77px;
+	float: right;
+	color: white;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+nav>.navcont{
+	display: flex;
+	width: 100%;
+}
+.navcont>ul{
+	padding: 0;
+}
+
+
+.anmeldenAB{
+	height: 100%;
+}
+ul .anmeldenAB .logo{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	}
+ul>.li{
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'Spirax', cursive;
+	font-size: 1.5em;
+	font-weight: 600;
+	height: 100%;
+	color: white;
+	text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 0;margin-left: 20px;
+}
+ul>.li>li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.li>.pack{
+	display: none;
+	position: absolute;
+	top: 100px;
+	
+}
+nav>.navcont>ul>.li:hover{
+	transform: scale(1.04) translateY(4px);
+	cursor: pointer;
+}
+.anmeldenAB {
+	display:  flex;
+	width: 260px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+
+.anmeldenAB a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 20px;
+	margin-right: 2%;
+	vertical-align: middle;
+	font-family: 'Spirax', cursive;
+	font-size: 1.5em;
+	font-weight: 600;
+	height: 50px;
+	text-decoration: none;
+	color: white;
+}
+.anmeldenAB a:hover{
+	transform: scale(1.05);
+}
+/* typing animation og logo*/
+.textcont{
+	width: 18em;
+	height: 100px;
+	color: rgba(255,255,255,0.8);
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+}
+
+.textcont h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgba(255,255,255,0.8); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-size: 3em;
+  font-family: 'Slabo 27px', serif;
+  animation: 
+    typing 3.4s steps(60, end),
+    blink-caret 0.50s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(255,255,255,0.8); }
+}
+.menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 100%;
+	margin: 0;
+	margin-top: 79px;
+	position: relative;
+	z-index: 1;
+	
+	
+}
+.menu li{
+	
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.2px;
+}
+
+.menu_button{
+	border: 1px solid;
+	font-size: 0.7em;
+	width: 68px;
+	height: 34px;
+	display: flex;
+
+	background-color:
+	rgba(255,255,255,0);
+	position: absolute;
+	top: -79px;
+	left: 10%;
+	border-radius: 12px;
+	
+	
+}
+.ulcontainer{
+	width: 100%;
+	height: 100%;
+	
+	
+
+}
+.drop-menu {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0;
+	
+	
+}
+.drop-menu ul{
+	font-family: 'Slabo 27px', serif;
+}
+.ulcontainer>ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Spirax', cursive;	font-size: 1.3rem;
+	list-style-type: none;
+		
+}
+
+.ulcontainer .sector{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left:0;
+	transform: translateY(33.2px);
+	
+}
+
+.sector li{
+	width: 100%;
+	transform: translateX(-500px);
+}
+.sector>li:hover{
+	transform: scale(1.05);
+}
+.menuAnimeOut {
+    animation: menuOut;
+      animation-duration: 400ms;
+      animation-delay: -150ms;
+      animation-timing-function: cubic-bezier(0.67, 0.38, 0.52, 1.25);
+      animation-fill-mode: forwards;
+	}
+.menuAnimeIn {
+    animation: menuIn;
+      animation-duration: 300ms;
+      animation-delay: -150ms;
+      animation-timing-function: cubic-bezier(0.86, 0.03, 1, 1);
+      animation-fill-mode: backwards;
+	}
+
+@keyframes menuOut{
+	0%{
+		transform: translateX(-500px);
+		
+	}
+	100%{
+		transform: translateX(0px);
+		
+	}
+}
+
+@keyframes menuIn{
+	0%{
+		transform: translateX(0px);
+		
+	}
+	100%{
+		transform: translateX(-500px);
+		
+	}
+}
+
+.menu_button:hover{
+	cursor: pointer;
+	
+}
+.searchForm{
+	margin-left: 2px;
+	width: 50%;
+	margin-right: -68px;
+}
+.searchForm input{
+	width: 100%;
+	height: 34px;
+	border: solid 1px;
+	border-radius: 30px;
+	text-align: center;
+	letter-spacing: 1.5px;
+	font-weight: 700;
+	font-family: 'Spirax', cursive;
+	color: rgba(0,0,0,1);
+}
+.btn{
+	transform: translateX(-61px);
+	width: 68px;
+	border: solid 1px;
+	border-radius: 15px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	font-family: 'Spirax', cursive;
+	
+}
+.btn:hover{
+		background-color: antiquewhite;
+		font-weight: 600;
+	}
+.input-group {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+
+section{
+	height: 100%;
+	width: auto;
+}
+.items {
+	margin: 0 60px 0 60px;
+}
+.items section{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-flow: wrap;
+	justify-content: center;
+	align-content: center;
+	z-index: 1;
+	margin-top: 79px;
+}
+.item {
+	
+	
+	max-width: auto;
+	max-height: 200px;
+	background-color: cornsilk;
+	transition: all 0.3s ease-in-out;
+
+}
+figure{
+	margin: 0 20px 30px 20px;
+	position: relative;
+	max-height: 200px;
+	opacity: 0;
+	transform: translateX(-20px);
+	transition: all 0.3s ease-in-out;
+	overflow: hidden;
+	cursor: pointer;
+}
+figure img{
+	display: block;
+	transform: scale(1)
+	
+	
+	
+}
+.isShowing{
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.largeWindow {
+	height: 526px;
+	background-size: contain;
+	background-image:url(pics/3.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin-top: 79px;
+	margin-bottom: 500px;	
+}
+figcaption{
+	position: absolute;
+	bottom: 10px;
+	left: -100%;
+	background: black;
+	color: white;
+	padding: 2px 8px;
+	font-size: 11px;
+	font-family: 'Spirax', cursive;
+	font-family: 'Indie Flower', cursive;
+	letter-spacing: 1px;
+	font-weight: 600;
+	transition: all 0.3s ease-in-out;
+}
+figure:hover
+figcaption {
+  left: 0%;
+}
+
+figure:hover
+img{
+	transform: scale(1.2);
+	transition: all 0.3s ease-in-out;
+}
+
+
+
+.menu_button ul>li.isActive{
+	box-shadow: 0 -4px 0 rgba(71, 138, 132, 1.0) inset;
+	background: #222;
+	color: rgba(255,255,255,1);
+}
+
+
+/* to add li that a getting from the left side like names of clothes, and make the pics with blur*/
+
+
